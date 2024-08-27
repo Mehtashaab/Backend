@@ -18,6 +18,7 @@ app.use(cookieParser())
 
 //routes 
 import userRouter from "./routes/user.routes.js"
+// console.log('user router', userRouter);
 
 //routes decleration
 
@@ -26,5 +27,7 @@ import userRouter from "./routes/user.routes.js"
 //Standard prectice
 
 app.use("/api/v1/users",userRouter)
+
+app.get('/jsnhere', (req, res) => res.send('hi'));
 
 export {app}
